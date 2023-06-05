@@ -1,0 +1,28 @@
+$color-body: rgb(154, 255, 221);
+$color-dos: #385260;
+$color-tres: black;
+
+$pantalla-m: 768px;
+$pantalla-l: 992px;
+
+@mixin flex-colum-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#primario {
+    @include flex-colum-centrado
+}
+
+.botones {
+    background-color: #93ccdd;
+        border: none;
+        padding: 3%;
+        cursor: pointer;
+        font-weight: 600;
+}
+.botones-varios {
+    @extend .botones
+}
